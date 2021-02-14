@@ -20,3 +20,13 @@ def productof2020(input):
             return year * difference
 
 print(productof2020(years))
+
+def productof2020with3(input):
+    for year in years:
+        for annee in years: 
+            # annee is year in French
+            difference = 2020 - (year + annee)
+            if difference in years:
+                return difference * year * annee
+
+print(productof2020with3(years))
